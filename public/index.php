@@ -1,6 +1,7 @@
 <?php
 
   require_once(".".DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."app".DIRECTORY_SEPARATOR."Configs".DIRECTORY_SEPARATOR."config.php");
+  require_once(APP."Configs".DIRECTORY_SEPARATOR."config_db.php");
 
 ?>
 
@@ -27,7 +28,7 @@
     <!-- FontAwesome -->
     <link href="<?= URL."public/assets/fontawesome/css/all.min.css"; ?>" rel="stylesheet">
     <!-- CSS Geral -->
-    <link href="<?= URL."public/css/sistema/geral.css"; ?>" rel="stylesheet">
+    <link href="<?= URL."public/css/geral.css"; ?>" rel="stylesheet">
   </head>
   <body>
 
@@ -40,7 +41,7 @@
     <!-- JS Geral -->
     <script src="<?= URL."public/assets/jquery/js/jquery-3.5.1.min.js"; ?>"></script>
     <script src="<?= URL."public/assets/bootstrap/js/bootstrap.bundle.min.js"; ?>"></script>
-    <script src="<?= URL."public/js/sistema/geral.js"; ?>"></script>
+    <script src="<?= URL."public/js/geral.js"; ?>"></script>
 
   </body>
 </html>
