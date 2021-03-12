@@ -43,9 +43,14 @@ Esse repositório é destinado ao desenvolvimento de um framework padrão e pág
 
 # :book: Funções do Sistema
 
-- Página Login
-- Página Home (pós login)
-- Página Novidades
+- **Página Login**
+  - Possibilidade de acesso ao sistema utilizando um nome de usuário ou e-mail e uma senha.
+    - **OBS:** forma de login será configurável via banco de dados (padrão **usuário**).
+
+<br/>
+
+- **Página Home** (pós login)
+  - Possibilidade de conter um **dashboard** com informações gerais do sistema e/ou avisos.
 
 <br/>
 
@@ -53,7 +58,7 @@ Esse repositório é destinado ao desenvolvimento de um framework padrão e pág
 
 Todo o conteúdo apresentado aqui não seria possível graças a algumas pessoas e/ou empresas:
 
-- [Font Awesome](https://fontawesome.com/): logo e favicon
+- [Font Awesome](https://fontawesome.com/): logo, favicon e ícones
 - [Bootstrap Team](https://getbootstrap.com/docs/4.5/examples/): tema do portal
 
 <br/>
