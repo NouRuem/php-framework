@@ -4,6 +4,9 @@
   require_once(APP."Configs".DIRECTORY_SEPARATOR."config_db.php");
   require_once(APP."autoload.php");
 
+  // Armazena a instância da classe de Rotes.
+  $c_ROTES = new Rotes();
+
 ?>
 
 <!DOCTYPE html>
@@ -30,13 +33,14 @@
     <link href="<?= URL."public/assets/fontawesome/css/all.min.css"; ?>" rel="stylesheet">
     <!-- CSS Geral -->
     <link href="<?= URL."public/css/geral.css"; ?>" rel="stylesheet">
+    <!-- CSS da Página -->
+    <link href="<?= URL."public/css/".$c_ROTES->css; ?>" rel="stylesheet">
   </head>
   <body>
 
     <?php
 
-      // Armazena a instância da classe de Rotes.
-      $c_ROTES = new Rotes();
+      $c_ROTES->executar();
 
     ?>
 
@@ -44,6 +48,8 @@
     <script src="<?= URL."public/assets/jquery/js/jquery-3.5.1.min.js"; ?>"></script>
     <script src="<?= URL."public/assets/bootstrap/js/bootstrap.bundle.min.js"; ?>"></script>
     <script src="<?= URL."public/js/geral.js"; ?>"></script>
+    <!-- JS da Página -->
+    <script src="<?= URL."public/js/".$c_ROTES->js; ?>"></script>
 
   </body>
 </html>

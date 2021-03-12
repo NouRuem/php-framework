@@ -11,6 +11,12 @@
     // Armazena os parâmetros.
     private $parameters = [];
 
+    // Armazena o CSS da página
+    public $css = "";
+
+    // Armazena o JS da página
+    public $js = "";
+
     public function __construct()
     {
       // Armazena a URL em array.
@@ -23,6 +29,12 @@
 
         unset($a_url[0]);
       }
+
+      // Armazena o controlador na variável de CSS.
+      $this->css = $this->controller;
+
+      // Armazena o controlador na variável de JS.
+      $this->js = $this->controller;
 
       // Chama o arquivo do controlador.
       require_once("../app/Controllers/".$this->controller.".php");
@@ -42,10 +54,14 @@
         }
       }
 
+      // Armazena a função na variável de CSS.
+      $this->css .= DIRECTORY_SEPARATOR.$this->function.".css";
+
+      // Armazena a função na variável de JS.
+      $this->js .= DIRECTORY_SEPARATOR.$this->function.".js";
+
       // Armazena os parâmetros da URL.
       $this->parameters = $a_url ? array_values($a_url) : [];
-
-      call_user_func_array([$this->controller, $this->function], $this->parameters);
     }
 
     /**
@@ -72,6 +88,17 @@
 
         return $a_url;
       }
+    }
+
+    /**
+     * A summary informing the user what the associated element does.
+     *
+     * @return void
+     *
+     */
+    public function executar()
+    {
+      call_user_func_array([$this->controller, $this->function], $this->parameters);
     }
   }
 
