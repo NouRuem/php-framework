@@ -2,6 +2,7 @@
 
   require_once(".".DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."app".DIRECTORY_SEPARATOR."Configs".DIRECTORY_SEPARATOR."config.php");
   require_once(APP."Configs".DIRECTORY_SEPARATOR."config_db.php");
+  require_once(APP."autoload.php");
 
 ?>
 
@@ -34,7 +35,8 @@
 
     <?php
 
-
+      // Armazena a instância da classe de Rotes.
+      $c_ROTES = new Rotes();
 
     ?>
 
