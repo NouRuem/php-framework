@@ -91,7 +91,7 @@
     }
 
     /**
-     * A summary informing the user what the associated element does.
+     * Executa todas as funções para carregar Controller, Model e View.
      *
      * @return void
      *
