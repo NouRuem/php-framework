@@ -30,7 +30,7 @@
 
 # :book: Sobre
 
-Esse repositório é destinado ao desenvolvimento de um framework padrão em PHP para novos projetos.
+Esse repositório é destinado ao desenvolvimento de um framework padrão e páginas inicias para novos projetos em PHP.
 
 <br/>
 
@@ -43,7 +43,9 @@ Esse repositório é destinado ao desenvolvimento de um framework padrão em PHP
 
 # :book: Funções do Sistema
 
-- Lorem
+- Página Login
+- Página Home (pós login)
+- Página Novidades
 
 <br/>
 
