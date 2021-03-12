@@ -18,7 +18,7 @@
     <meta name="description" content="Portal base para desenvolvimento de novos projetos.">
     <meta name="author" content="Allan C. Cruz">
     <title><?= APP_NOME; ?></title>
-    <!-- Favicon -->
+    <!-- Favicons -->
     <link href="img/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
     <link href="img/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
     <link href="img/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
@@ -29,7 +29,7 @@
     <meta content="#454545" name="theme-color">
     <!-- Bootstrap -->
     <link href="<?= URL."public/assets/bootstrap/css/bootstrap.min.css"; ?>" rel="stylesheet">
-    <!-- FontAwesome -->
+    <!-- Font Awesome -->
     <link href="<?= URL."public/assets/fontawesome/css/all.min.css"; ?>" rel="stylesheet">
     <!-- CSS Geral -->
     <link href="<?= URL."public/css/geral.css"; ?>" rel="stylesheet">
